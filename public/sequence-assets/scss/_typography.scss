@@ -1,0 +1,99 @@
+:root {
+    --input-height: clamp(45px, 3.7vw, 70px);
+}
+.form-control {
+    padding: 10px;
+    background: white;
+    box-shadow: none;
+    border: 1px solid var(--#{$prefix}border-color);
+    &:focus {
+        color: var(--input-focus-color, #71748d);
+        background-color: var(--input-focus-bg-color, #fff);
+        border-color: var(--#{$prefix}primary);
+        outline: 0;
+        box-shadow: none;
+        &::placeholder {
+            color: var(--input-focus-placeholder, var(--#{$prefix}primary));
+        }
+        i {
+            color: var(--#{$prefix}primary);
+        }
+    }
+    &::placeholder {
+        color: var(--cstm-gray-500);
+    }
+}
+// border radius
+.rounded-20px {
+    border-radius: 20px;
+}
+@each $name, $size in $grid-breakpoints {
+    @media screen and (min-width: #{$size}) {
+        .width-#{$name} {
+            width: var(--#{$prefix}#{$name}-width);
+        }
+        // font size
+        @for $i from 10 through 40 {
+            .font-#{$name}-#{$i}px {
+                font-size: $i + px;
+            }
+        }
+    }
+}
+@for $i from 1 through 9 {
+    .hover_opacity-0#{$i} {
+        &:hover {
+            opacity: #{"0.#{$i}"} !important;
+        }
+    }
+}
+.image-white {
+    filter: brightness(0) invert(1);
+}
+.image-dark {
+    filter: brightness(0);
+}
+.image-primary {
+    filter: var(--cstm-image-primary);
+}
+// show lines
+.show-line {
+    -webkit-box-orient: vertical;
+    display: -webkit-box !important;
+    overflow: hidden;
+    -webkit-line-clamp: var(--show-line);
+}
+@for $i from 1 through 5 {
+    .show-line-#{$i} {
+        -webkit-box-orient: vertical;
+        display: -webkit-box !important;
+        overflow: hidden;
+        -webkit-line-clamp: $i;
+    }
+}
+input:not([type="checkbox"]):not([type="radio"]),
+select,
+textarea {
+    min-height: var(--input-height);
+}
+// spacing_not-last-child
+.spacing_not-last-child {
+    & > *:not(:last-child) {
+        margin-bottom: var(--not-latest-child-spacing, 10px);
+    }
+}
+// .border_not-last-child
+.border_not-last-child {
+    // @media screen and (min-width: 768px) {
+    //   & > * {
+    //     border-right: var(--not-latest-child-border-width, 1px) solid
+    //       var(--not-latest-child-border-color, var(--cstm-border-color));
+    //   }
+    // }
+    @media screen and (min-width: 1200px) {
+        & > *:not(:last-child) {
+            border-right: var(--not-latest-child-border-width, 1px) solid
+                var(--not-latest-child-border-color, var(--cstm-border-color));
+        }
+    }
+}

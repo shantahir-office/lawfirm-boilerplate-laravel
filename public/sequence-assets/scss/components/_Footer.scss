@@ -1,0 +1,27 @@
+// @media screen and (min-width: 1200px) {
+//   main {
+//     margin-bottom: clamp(456px, 27vw, 490px);
+//     z-index: 1;
+//     position: relative;
+//   }
+//   footer {
+//     position: fixed;
+//     top: 0;
+//     bottom: 0;
+//     left: 0;
+//     width: 100%;
+//     z-index: -1;
+//     display: flex;
+//     align-items: end;
+//   }
+// }
+// @media screen and (min-width: 1440px) {
+//   main {
+//     margin-bottom: clamp(456px, 35vw, 490px);
+//   }
+// }
+// @media screen and (min-width: 1600px) {
+//   main {
+//     margin-bottom: clamp(456px, 29vw, 490px);
+//   }
+// }

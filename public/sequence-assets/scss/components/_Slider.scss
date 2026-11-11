@@ -1,0 +1,19 @@
+// swiper-slide-active
+.testimonialSlider {
+  .swiper-slide {
+    height: auto;
+  }
+  .swiper-slide-active {
+    & > div {
+      background: var(--cstm-primary) !important;
+      box-shadow: 0 14px 34px rgb(216, 133, 7, 30%);
+      span,
+      p {
+        color: black !important;
+      }
+      p img:not([alt="user image"]) {
+        filter: brightness(0) invert(1);
+      }
+    }
+  }
+}

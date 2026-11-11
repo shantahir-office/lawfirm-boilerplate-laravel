@@ -1,0 +1,53 @@
+{
+    "data": {
+        "status": "success",
+        "message": "Lead Data Stored Successfully",
+        "data": [
+            {
+                "lead_id": "45",
+                "lead_step": 2,
+                "lead_type": "text",
+                "lead_key": "Basic Check For Availability",
+                "lead_value": "$99",
+                "updated_at": "2024-10-19T00:40:13.000000Z",
+                "created_at": "2024-10-19T00:40:13.000000Z",
+                "id": 472
+            }
+        ]
+    },
+    "status": 200,
+    "statusText": "",
+    "headers": {
+        "cache-control": "no-cache, private",
+        "content-length": "197",
+        "content-type": "application/json"
+    },
+    "config": {
+        "url": "api/leadData",
+        "method": "post",
+        "data": "{\"lead_id\":\"45\",\"data\":[{\"question\":\"Basic Check For Availability\",\"lead_type\":\"text\",\"lead_step\":2,\"error\":false,\"index\":\"1\",\"answer\":\"$99\"}]}",
+        "headers": {
+            "Accept": "application/json, text/plain, */*",
+            "Content-Type": "application/json",
+            "Authorization": "XeL6eZsVUzkOUDi8K80uXqt3onY9XHXlMwj29F76"
+        },
+        "baseURL": "https://book-brands.digitechtictest.com/",
+        "transformRequest": [
+            null
+        ],
+        "transformResponse": [
+            null
+        ],
+        "timeout": 0,
+        "xsrfCookieName": "XSRF-TOKEN",
+        "xsrfHeaderName": "X-XSRF-TOKEN",
+        "maxContentLength": -1,
+        "maxBodyLength": -1,
+        "transitional": {
+            "silentJSONParsing": true,
+            "forcedJSONParsing": true,
+            "clarifyTimeoutError": false
+        }
+    },
+    "request": {}
+}

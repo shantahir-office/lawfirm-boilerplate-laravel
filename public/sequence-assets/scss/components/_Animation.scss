@@ -1,0 +1,44 @@
+// pulse-animation-primary
+.pulse-animation-primary,
+.pulse-animation-white,
+.pulse-animation-dark {
+  --pulse-animation-color-start: rgb(var(--cstm-primary-rgb), 0.4);
+  --pulse-animation-color-end: rgb(var(--cstm-primary-rgb), 0);
+  animation: shadow-pulse 1.5s infinite;
+  @keyframes shadow-pulse {
+    0% {
+      box-shadow: 0 0 0 0px var(--pulse-animation-color-start);
+    }
+    100% {
+      box-shadow: 0 0 7px 25px var(--pulse-animation-color-end);
+    }
+  }
+}
+
+.pulse-animation-white {
+  --pulse-animation-color-start: rgb(var(--cstm-light-rgb), 0.4);
+  --pulse-animation-color-end: rgb(var(--cstm-light-rgb), 0);
+}
+
+.pulse-animation-dark {
+  --pulse-animation-color-start: rgb(var(--cstm-dark-rgb), 0.4);
+  --pulse-animation-color-end: rgb(var(--cstm-dark-rgb), 0);
+}
+
+// animate-gradient-primary-to-b
+.animate-gradient-primary-to-b {
+  background: linear-gradient(to bottom, #0186b5, black);
+  background-size: 180% 180%; /* Ensures smooth animation */
+  animation: gradientAnimation 11s linear infinite;
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 0%;
+    }
+    50% {
+      background-position: 100% 100%;
+    }
+    100% {
+      background-position: 0% 0%;
+    }
+  }
+}

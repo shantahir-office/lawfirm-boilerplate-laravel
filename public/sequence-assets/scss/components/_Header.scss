@@ -1,0 +1,86 @@
+// navbar-white
+
+.navbar-white {
+    .navbar-nav {
+        --cstm-nav-link-color: white;
+        --cstm-nav-link-hover-color: white;
+        --cstm-navbar-active-color: rgba(255, 255, 255, 0.7);
+    }
+}
+
+.navbar-nav {
+    .dropdown {
+        .dropdown-menu {
+            --cstm-dropdown-link-active-bg: transparent;
+            --cstm-dropdown-item-padding-y: 0px;
+            --cstm-dropdown-border-radius: 10px;
+            --cstm-dropdown-link-hover-bg: transparent;
+            --cstm-dropdown-link-hover-color: white;
+            --cstm-dropdown-padding-y: 15px;
+            --cstm-dropdown-padding-x: 20px;
+            // transform: translateY(20px) !important;
+            // padding: 8px;
+            border: none;
+            margin-top: 0.2rem;
+            max-height: calc(100vh - 10rem);
+            overflow: hidden;
+            overflow-y: auto;
+            box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+            min-width: max-content;
+            padding-bottom: 1.4rem;
+            .dropdown-item {
+                border-radius: 0px;
+                color: black;
+                white-space: pre-line;
+                padding: 0;
+                line-height: 1.3;
+                &:hover {
+                    color: var(--cstm-primary);
+                }
+                &:not(:last-child) {
+                    margin-bottom: 10px;
+                }
+            }
+            &.megamenu {
+                left: 0;
+                right: 0;
+                // width: 100%;
+                margin-top: 0;
+                min-width: calc(100vw - 10vw);
+                @media screen and (max-width: 992px) {
+                    top: 5px !important;
+                }
+            }
+        }
+    }
+
+    & > li.nav-item {
+        & > a.nav-link {
+            padding-inline: 10px !important;
+            img {
+                width: 15px;
+                height: 15px;
+                padding: 4px;
+            }
+            &[aria-expanded="true"],
+            &:hover {
+                img {
+                    background: rgb(255, 255, 255, 0.2);
+                    filter: brightness(0) invert(1);
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 1024px) {
+    .navbar .dropdown:hover .dropdown-menu {
+        display: block !important;
+    }
+    .navbar-nav {
+        --cstm-nav-link-padding-y: 2rem;
+    }
+}
+
+.offcanvas-body {
+    filter: inherit;
+}

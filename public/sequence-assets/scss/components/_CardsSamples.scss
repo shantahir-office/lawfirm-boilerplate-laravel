@@ -1,0 +1,154 @@
+// .sequence-bg {
+//     background: black url(../assets/img/ban.webp) no-repeat center/cover;
+// }
+
+// protected-tm-card
+.protected-tm-card {
+    img {
+        transition: 0.2s ease-in-out;
+    }
+    &:hover {
+        img {
+            transform: scale(1.1);
+        }
+    }
+}
+
+// cover-step-services-card
+
+.cover-step-package-card {
+    .btn-check:checked + .btn,
+    :not(.btn-check) + .btn:active,
+    .btn:first-child:active,
+    .btn.active,
+    .btn.show {
+        box-shadow: 27px 27px 52px rgb(0, 0, 0, 0.15);
+        transform: scale(1.015);
+        // * {
+        //     color: white;
+        // }
+    }
+    .step-package-card {
+        transition: 0.2s cubic-bezier(0.22, 0.68, 0, 1.71);
+        &:hover {
+            opacity: 0.9;
+        }
+        &.btn-primary {
+            --cstm-btn-color: black;
+            --cstm-btn-bg: transparent;
+            --cstm-btn-border-color: #dee2e6;
+            --cstm-btn-active-color: black;
+            --cstm-btn-active-bg: rgb(var(--cstm-primary-rgb), 0.2);
+        }
+    }
+}
+
+.target-package-step-card-colors {
+    & div {
+        &:nth-child(1) {
+            & > div {
+                label.btn-primary {
+                    --cstm-btn-bg: white;
+                    --cstm-btn-active-bg: #cbcbe3;
+                    --cstm-btn-active-border-color: #7272da;
+                }
+            }
+        }
+        &:nth-child(2) {
+            & > div {
+                label.btn-primary {
+                    --cstm-btn-bg: white;
+                    --cstm-btn-active-bg: #f5deb4;
+                    --cstm-btn-active-border-color: #ffb322;
+                }
+            }
+        }
+        &:nth-child(3) {
+            & > div {
+                label.btn-primary {
+                    --cstm-btn-bg: white;
+                    --cstm-btn-active-bg: #f5efd0;
+                    --cstm-btn-active-border-color: #f5d845;
+                }
+            }
+        }
+        &:nth-child(4) {
+            & > div {
+                label.btn-primary {
+                    --cstm-btn-bg: white;
+                    --cstm-btn-active-bg: #d0fdee;
+                    --cstm-btn-active-border-color: #5dfac6;
+                }
+            }
+        }
+    }
+}
+
+.react-tel-input {
+    .form-control {
+        font-size: 1rem !important;
+        font-family: "Poppins";
+    }
+    .selected-flag {
+        width: 100% !important;
+        // padding-left: 10px !important;
+        display: flex;
+        align-items: center;
+        padding: 0 8px 0 8px !important;
+        gap: 15px;
+        .code-badge {
+        }
+        .flag {
+            position: relative !important;
+            top: 0 !important;
+            margin: 0 !important;
+            flex-shrink: 0;
+        }
+        &:focus,
+        &:hover {
+            background: transparent;
+        }
+    }
+    .flag-dropdown {
+        position: relative !important;
+        border: none !important;
+        // background: transparent !important;
+        width: auto;
+        order: -1;
+    }
+}
+.iti {
+    width: 100%;
+}
+.form-error {
+    border: 2px solid red !important;
+    input {
+        &::placeholder {
+            color: red !important;
+        }
+    }
+}
+.form-error::placeholder {
+    color: red !important;
+}
+.amazong-bg-shade {
+    position: relative;
+    z-index: 1;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -5%;
+        width: 108%;
+        height: 100%;
+        background: var(--cstm-secondary);
+        z-index: -1;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .mobile-bg-primary {
+        background: var(--cstm-secondary) !important;
+    }
+}

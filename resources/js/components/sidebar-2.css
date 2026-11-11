@@ -1,0 +1,2236 @@
+p {
+    color: var(--black) !important;
+    font-weight: 400;
+}
+
+.sequenceFormSec {
+    padding: 3rem 0;
+    height: 100%;
+}
+
+.collapseCell {
+    border: 1px solid #d9d9d9;
+}
+
+.collapseCell .head {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.collapseCell .body {
+    height: 0;
+    padding: 0;
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    opacity: 0;
+}
+
+.collapseCell.open .body {
+    padding: 1.5rem;
+    height: 22rem;
+    opacity: 1;
+}
+
+.collapseCell .body .list {
+    display: flex;
+    align-items: flex-end;
+    gap: 4rem;
+}
+
+.collapseCell .body strong {
+    display: block;
+    font-size: 15px;
+}
+
+.collapseCell .body p {
+    font-size: 14px;
+}
+
+.collapseCell .body .list li p {
+    margin: 0;
+}
+
+.leadForm .iti--separate-dial-code .iti__selected-flag {
+    background-color: white;
+}
+
+.leadForm .iti__selected-flag {
+    width: 7rem;
+    height: 3.125rem;
+    padding: 0.375rem 0.75rem;
+    border: 1px solid #e6e6e6;
+    border-radius: 5px 0 0 5px;
+    top: -1px;
+}
+
+.leadForm .input-group .phone2.form-control {
+    max-width: calc(100% - 7rem) !important;
+    left: 7rem;
+}
+
+.sequenceForm h4 {
+    font-size: 1rem;
+    color: var(--black);
+    font-weight: 600;
+}
+
+.sequenceForm p,
+.sequenceForm label {
+    font-size: 14px;
+    margin: 0;
+}
+
+.sequenceForm .form-control {
+    background: transparent;
+    border-color: #c5c5c5;
+    border-radius: 0;
+    height: 3.5rem;
+    margin-top: 1rem;
+}
+
+.srchPkg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    z-index: 1;
+    opacity: 0;
+}
+
+.selectPkgWrap {
+    background: #fbfbfb;
+    border: 4px solid #f3f3f3;
+    box-shadow: 0 0 14px rgb(0 0 0 / 10%);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1.25rem;
+    position: relative;
+    min-height: 20rem;
+    margin: 0;
+}
+
+.srchPkg:checked+.selectPkgWrap {
+    box-shadow: 0 0 20px #75a2e580;
+    border-color: #75a2e5;
+}
+
+.selectPkgWrap.new-box {
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.selectPkgWrap p {
+    margin: 0.5rem 0 0;
+    color: var(--black);
+    line-height: 1.2;
+}
+
+.sequenceFormSec .packageStyle {
+    padding: 3rem 1rem 1rem;
+}
+
+.sequenceFormSec .packageStyle .head h3 {
+    gap: 0;
+}
+
+.sequenceFormSec .packageStyle .body ul li p {
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+
+.sequenceFormSec .packageStyle:hover .themeBtn-orange {
+    background: var(--blue);
+    box-shadow: 0px 5.019608020782471px 42.66666793823242px 0px #1f2041;
+}
+
+.sequenceFormSec .packageStyle .pricing-footer {
+    min-height: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+.sequenceFormSec .packageStyle .body ul {
+    height: 18rem;
+    overflow: overlay;
+}
+
+.apartCell,
+.regionCell {
+    box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+}
+
+.selectPkgWrap .form-check-input {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.selectPkgWrap label {
+    font-size: 1.5rem;
+    font-weight: 800 !important;
+    min-height: 4rem;
+}
+
+.selectPkgWrap h2 {
+    text-align: right;
+    margin: 0;
+    font-size: clamp(40px, 5vw, 80px);
+    /* font-family: "Niagara Solid", sans-serif; */
+    /* font-weight: 100; */
+    line-height: 1;
+}
+
+.selectPkgWrap a {
+    color: var(--blue);
+    font-size: 15px;
+    display: table;
+    text-decoration: underline;
+}
+
+.selectPkgWrap .ribbon {
+    position: absolute;
+    top: -12px;
+    left: -10px;
+    font-size: 10px;
+    background: #1e16a1;
+    color: #fff;
+    box-shadow: 4px 3px 8px rgb(0 0 0 / 20%);
+    padding: 6px 20px;
+    border-radius: 12px 50px 50px 0;
+}
+
+.selectPkgWrap .ribbon2 {
+    position: absolute;
+    top: -12px;
+    left: -10px;
+    font-size: 10px;
+    background: #168b69;
+    color: #fff;
+    box-shadow: 4px 3px 8px rgb(0 0 0 / 20%);
+    padding: 6px 20px;
+    border-radius: 12px 50px 50px 0;
+}
+
+.selectPkgWrap .ribbon:after,
+.selectPkgWrap .ribbon2:after {
+    content: "";
+    border-top: 10px solid #626264;
+    border-left: 10px solid transparent;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+}
+
+.stickyWrap {
+    background: var(--primary);
+    box-shadow: 0 0 20px #0002;
+    border-radius: 12px;
+    padding: 1rem;
+    position: sticky;
+    top: 5rem;
+}
+
+.stickyWrap .head {
+    display: flex;
+    gap: 10px;
+}
+
+.stickyWrap .head h5 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1;
+    margin: 0;
+    color: var(--white);
+}
+
+.stickyWrap .head a {
+    background: rgb(226 45 45 / 30%);
+    color: #e22d2d;
+    padding: 14px 15px;
+    line-height: 1;
+    border-radius: 5px;
+}
+
+.stickyWrap .body {
+    padding-top: 0.8rem;
+}
+
+.stickyWrap .body h3 {
+    font-size: 1.125rem;
+    font-weight: 400;
+    color: #75a2e5;
+}
+
+.totalPrice {
+    display: flex;
+    justify-content: space-between;
+    color: var(--white);
+    border-top: 2px solid var(--white);
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+.totalPrice div {
+    font-size: 1.25rem;
+    font-weight: 800;
+    padding-left: 12px;
+}
+
+
+
+
+
+.modal .close {
+    position: absolute;
+    top: -1.5rem;
+    right: -1.5rem;
+    border: 0;
+    border-radius: 100px;
+    width: 3rem;
+    height: 3rem;
+    background: #000;
+    color: #fff;
+    font-size: 2rem;
+    line-height: 1;
+}
+
+/* Step5 CSS Start */
+.sequenceContnt {
+    border: 3px solid #fcdd86;
+    padding: 2rem;
+}
+
+.sequenceFormSec.step5 {
+    background-color: #f5f5f5;
+}
+
+.sequenceFormSec.step5 .governContnt h2 {
+    font-size: 1.75rem;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+.sequenceFormSec.step5 .governContnt {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 5px;
+}
+
+.sequenceFormSec.step5 .class-form {
+    border: 3px solid #fcdd86;
+    border-radius: 5px;
+    padding: 2rem;
+    position: relative;
+}
+
+span.dotSec {
+    width: 48%;
+    height: 0;
+    margin-top: 0.8rem;
+    border-top: dashed;
+    border-color: #8c8c8c;
+}
+
+ul.dotbtn li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+ul.dotbtn label {
+    font-size: 18px;
+    color: #8c8c8c;
+    display: flex;
+    gap: 0.4rem;
+    align-items: center;
+}
+
+ul.dotbtn li strong {
+    margin-left: auto;
+    font-size: 18px;
+    color: #8c8c8c;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+}
+
+ul.dotbtn li .dotSec {
+    border-top: 1px dashed #ccc;
+    flex: 1 1 auto;
+}
+
+ul.dotbtn h5 {
+    font-size: 14px;
+    border: 1px solid #168b69;
+    border-radius: 20px;
+    padding: 0.5rem;
+    background: #fffaec;
+    color: #000;
+}
+
+.informationIcon p {
+    position: absolute;
+    right: -15rem;
+    background: whitesmoke;
+    color: #8c8c8c;
+    width: 50%;
+    top: -4rem;
+    opacity: 0;
+    padding: 0.6rem;
+    transition: all 0.5s ease;
+}
+
+.informationIcon:hover p {
+    opacity: 1;
+}
+
+.informationIcon i {
+    color: #168b69;
+    padding-left: 0.4rem;
+}
+
+/* Step5 CSS End */
+.tabSecStyle .right ul li {
+    padding: 5px 0;
+}
+
+.foterLinks {
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal-dialog.container {
+    max-width: 1280px;
+}
+
+.modal-title {
+    font-size: 1.4rem !important;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.thankyouSec h2 span {
+    font-size: 3.175rem;
+    color: #168b69;
+    font-weight: bold;
+}
+
+.thankyouSec h2 {
+    font-size: 2.475rem;
+    color: #fff;
+    font-weight: 600;
+}
+
+.thankyouSec {
+    background: #052652;
+    padding: 0;
+    position: relative;
+}
+
+.thanksContnt img {
+    position: absolute;
+    top: -4.7rem;
+    z-index: -11;
+    width: 670px;
+}
+
+.thanksContnt {
+    padding: 3rem;
+    position: relative;
+    z-index: 11;
+}
+
+.thankyouSec .socialList {
+    justify-content: start;
+    margin-top: 2rem;
+}
+
+.thankyouSec .socialList a {
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--yellow);
+    color: var(--blue);
+    border-radius: 100px;
+    transition: ease all 0.5s;
+}
+
+.xMoveAnim {
+    position: relative;
+    animation: xmoveAnim ease infinite 2s;
+    font-weight: 600;
+}
+
+@keyframes xmoveAnim {
+    0% {
+        transform: translateX(-5px);
+    }
+
+    50% {
+        transform: translateX(0px);
+    }
+
+    100% {
+        transform: translateX(-5px);
+    }
+}
+
+.phoneSec .iti__selected-flag {
+    height: 63px;
+}
+
+.phoneSec .iti.iti--allow-dropdown.iti--separate-dial-code {
+    width: 22%;
+}
+
+.phoneSec .iti--separate-dial-code .iti__selected-flag {
+    background-color: rgb(255 255 255);
+    border-right: 1px solid #00000008;
+    box-shadow: 0 0 8px rgb(0 0 0 / 10%);
+}
+
+.testimonialSec .slick-next:focus,
+.slick-next:hover,
+.slick-prev:focus,
+.slick-prev:hover {
+    color: transparent;
+    outline: 0;
+    background: #168b69;
+}
+
+.tmRenewalPricing .listStyle p {
+    color: #000;
+}
+
+#level,
+#amt {
+    height: 18px;
+    text-transform: capitalize;
+}
+
+.label span {
+    font-size: 3.875rem !important;
+    font-weight: bold !important;
+}
+
+.radio-list.tenureList li {
+    font-size: 20px;
+}
+
+.radio-list input[type="radio"] {
+    width: 40px;
+    height: 20px;
+}
+
+.radio-list.tenureList li label {
+    display: flex;
+    align-items: center;
+}
+
+.tmRenewalPricing .pricingThumb .pricing a {
+    width: 250px;
+    text-align: center;
+}
+
+.blog-detail-Contnt {
+    padding-left: 3rem;
+}
+
+.blogDetailSec {
+    list-style-type: decimal;
+    padding-left: 3rem;
+}
+
+.blogDetailSec li {
+    font-size: 1rem;
+    color: var(--text-color);
+    padding: 5px 0;
+}
+
+ul.blog-details-points {
+    list-style-type: disc;
+    list-style-position: inside;
+    font-size: 1rem;
+    color: var(--text-color);
+    padding: 10px 0;
+}
+
+.informationIcon.information-parah2 p {
+    top: 1rem;
+    right: -20rem;
+}
+
+.informationIcon.information-parah3 p {
+    top: 6rem;
+    right: -19rem;
+}
+
+.blog-DetailInner img {
+    height: 500px;
+    object-fit: cover;
+}
+
+/* Landig page CSS start */
+
+.landingPage::before {
+    display: none;
+}
+
+.landingNav {
+    position: absolute;
+    inset: 0 0 auto 0;
+    z-index: 111;
+}
+
+.nav-landing {
+    padding: 1.5rem 0;
+}
+
+.nav-landing ul li:first-child {
+    display: block;
+}
+
+.nav-landing ul li {
+    display: none;
+}
+
+.nav-landing ul li a {
+    color: var(--yellow);
+}
+
+.landingPage .baner-girl {
+    position: absolute;
+    z-index: 1;
+    right: 30%;
+    bottom: 0;
+    width: 470px;
+}
+
+.landingPage .leadForm .title h4 span {
+    font-weight: 700;
+}
+
+.landingPage .leadForm .title h4 {
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+}
+
+.landingPage .leadForm .subTitle h5 {
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.landingPage .leadForm .subTitle {
+    background: #fc2835;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.landingPage h2 {
+    font-size: 44px;
+}
+
+.landingPage h2 span {
+    display: block;
+    font-weight: 700;
+    font-size: 44px;
+}
+
+.registerSec .registerBox {
+    background: #168b69;
+    padding: 3rem 14px 2rem 3rem;
+    border-radius: 5px;
+    position: relative;
+    margin: 0 1rem;
+}
+
+.registerSec .registerBox span {
+    position: absolute;
+    left: -2rem;
+    top: 39%;
+    font-size: 36px;
+    background: var(--blue);
+    width: 65px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    -webkit-text-stroke: 1px #168b69;
+    color: #052652;
+}
+
+.registerSec .registerBox h4 {
+    font-size: 26px;
+}
+
+.registerSec .registerBox p {
+    color: #282828;
+    font-size: 14px;
+}
+
+.registerSec h2 {
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 3rem;
+}
+
+.landingPage p {
+    width: 96%;
+    font-size: 20px;
+}
+
+.landingPage h2 {
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.landingPage .listStyle p {
+    width: 100% !important;
+    font-size: 18px;
+}
+
+.landingPage .listStyle p span {
+    color: #168b69;
+    font-weight: 500;
+}
+
+.landingPage h2 span {
+    display: block;
+    font-weight: 700;
+}
+
+.nav-landing ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lp-Iconbox .iconBox {
+    min-height: 17rem;
+}
+
+/* Landig page CSS end */
+
+.phoneNumber {
+    display: flex;
+}
+
+.phoneNumber input:not(.iti__search-input) {
+    padding-left: 6rem;
+}
+
+.formWrap label {
+    font-size: 1.125rem;
+    margin: 10px 0;
+    font-weight: 500;
+}
+
+
+.formWrap .btnStyle {
+    height: 5rem;
+    border-radius: 1.25rem;
+    font-size: 1.25rem;
+}
+
+.formWrap .form-control {
+    background: #f5f5f5;
+    height: 4.375rem;
+    border-radius: 1.25rem;
+    border: 0;
+}
+
+
+.modal-content {
+    padding: 0;
+}
+
+.formWrap .filedWrap {
+    background: #f5f5f5;
+    padding: 2rem 1rem 2rem;
+    border-radius: 2rem;
+}
+
+.formWrap .filedWrap .form-control {
+    background: var(--white);
+}
+
+.table tr td a.remove {
+    display: block;
+    font-size: 12px;
+    color: red;
+}
+
+.step5Form {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.stepContnt {
+    padding-left: 1rem;
+}
+
+.stepContnt p {
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+
+.stepContnt ul {
+    list-style-type: none;
+    list-style-position: inside;
+}
+
+.stepContnt ul li {
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--black);
+    padding: 4px 0;
+    display: flex;
+}
+
+.stepContnt ul li i {
+    font-size: 1.25rem;
+}
+
+.redHead {
+    background: #c30000;
+    margin: 0;
+    padding: 1.1rem;
+    color: #fff;
+    border-radius: 0.5rem 0.5rem 0 0;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+
+.step5Form a {
+    display: block;
+}
+
+.stepContnt ul li i {
+    padding-right: 0.5rem;
+}
+
+/* Begin: Steps Status CSS */
+.stepStatus {
+    margin-bottom: clamp(1rem, 5vw, 3rem);
+}
+
+.stepStatus ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* flex-flow: row wrap;
+      gap: 10px; */
+    /* gap: 40px; */
+    gap: 28px;
+    padding-block: 10px;
+    /* overflow: hidden;
+    overflow-x: auto; */
+    padding-bottom: 1rem;
+}
+
+/* .stepStatus ul::-webkit-scrollbar {
+    width: 0px;
+    height: 0em;
+    background: transparent;
+  }
+  .stepStatus ul::-webkit-scrollbar-thumb {
+    border: 0px solid transparent;
+  }
+  @media screen and (min-width: 992px) {
+    .stepStatus ul::-webkit-scrollbar {
+      width: 6px;
+      height: 0.2em;
+      background: transparent;
+    }
+    .stepStatus ul::-webkit-scrollbar-thumb {
+      border: 2px solid #f5f5f5;
+    }
+  } */
+.stepStatus ul li {
+    flex: 0 0 15%;
+    border-bottom: 4px solid #dfdfdf;
+    position: relative;
+}
+
+.stepStatus ul li:after,
+.stepStatus ul li:before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: #dfdfdf;
+    position: absolute;
+    border-radius: 100px;
+    bottom: -6px;
+    right: -19px;
+}
+
+.stepStatus ul li:after {
+    background: rgb(223 223 223 / 50%);
+    transform: scale(2.2);
+}
+
+.stepStatus ul li.active:after,
+.stepStatus ul li.active:before {
+    background: #75a2e5;
+}
+
+.stepStatus ul li.active:after {
+    opacity: 0.5;
+}
+
+.stepStatus ul li:last-child:before,
+.stepStatus ul li:last-child:after {
+    content: none;
+}
+
+.stepStatus ul li span {
+    font-weight: 500;
+    line-height: 1;
+    display: block;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.stepStatus ul li.active span {
+    color: #75a2e5;
+}
+
+.stepStatus ul li.active {
+    border-color: #75a2e5;
+}
+
+/* END: Steps Status CSS */
+.progress-bar {
+    background-color: #75a2e5;
+    color: #fff;
+}
+
+.progress {
+    height: 30px;
+    font-size: 1.2rem;
+    font-weight: 800;
+    background: #101020;
+    margin: 1rem auto 0;
+    border-radius: 5px;
+    width: calc(100% - 6rem);
+}
+
+.packgeItems {
+    background: var(--white);
+    box-shadow: 0 0 10px #0001;
+    border-radius: 10px;
+    padding: 2rem 1rem;
+    position: relative;
+}
+
+.packgeItems .botom {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.packgeItems .botom h2 {
+    margin: 0;
+    font-size: 3rem;
+}
+
+.packgeItems .botom span {
+    font-size: 1.2rem;
+}
+
+.packgeItems .top h4 {
+    text-align: center;
+    font-weight: 800;
+}
+
+.packgeItems ul {
+    background: #f4f6f7;
+    padding: 2rem 1rem;
+    border-radius: 7px;
+    height: 350px;
+}
+
+.tagged {
+    position: absolute;
+    top: -26px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--yellow);
+    padding: 8px 2rem;
+    border-radius: 6px;
+    width: 60%;
+    text-align: center;
+}
+
+.redColr {
+    background-color: red;
+    color: #fff;
+}
+
+.innherHeader {
+    box-shadow: 0 0 20px #75a2e55c;
+}
+
+.note {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.form-tooltip {
+    cursor: pointer;
+    position: relative;
+    color: #75a2e5;
+    display: inline-block;
+}
+
+.form-tooltip-body {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    left: 44%;
+    background-color: #fff;
+    padding: 8px 15px 15px 15px;
+    width: 400px;
+    max-height: 700px;
+    overflow: auto;
+    box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
+        0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
+    transition: visibility 0s linear 0.3s, opacity 0.3s linear;
+    z-index: 2;
+    cursor: default;
+    border-radius: 6px;
+}
+
+.tooltip-warning {
+    color: #000;
+    font-weight: 700;
+}
+
+.form-tooltip:hover .form-tooltip-body {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0s;
+
+    display: block;
+}
+
+.form-tooltip-body p {
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+    color: #000;
+    font-weight: 400;
+    margin: 0;
+}
+
+/* Begin: Declaration Form CSS */
+#snackbar {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    font-size: 11px;
+    background-color: red;
+}
+
+#snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+@keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeout {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}
+
+.formBanner h2 {
+    color: #fff;
+    font-size: 45px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.formBanner ul {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    list-style-type: none;
+    margin-top: 2rem;
+}
+
+.formBanner ul li a {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+.formBanner ul li {
+    color: #fff;
+}
+
+.formText p {
+    text-align: left;
+    font-weight: 400;
+}
+
+.formText .input-group {
+    margin: 0.8rem 0;
+}
+
+.formText {
+    box-shadow: 0px 0px 16px #00000026;
+    padding: 4rem 3rem;
+    margin-bottom: 3rem;
+}
+
+.formText input {
+    height: 3.5rem;
+}
+
+.form-Contnt p {
+    color: #000;
+}
+
+.form-Contnt p a {
+    color: #675ef5;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.form-Contnt .button-round {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: fit-content;
+    gap: 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.form-Contnt .button-round img {
+    width: 30px;
+}
+
+.form-Contnt {
+    background: #f5f5f5;
+    padding: 3rem 4rem;
+    border-radius: 10px;
+}
+
+.formSec {
+    padding: 4rem 0;
+}
+
+.formStyle .form-control::placeholder {
+    font-size: 13px;
+    color: #a0a0a0;
+    text-indent: 0;
+    opacity: 1;
+}
+
+.declarationSec {
+    padding: 5rem 0;
+}
+
+.declarationSec label {
+    font-size: 1rem;
+}
+
+.declarationSec h4 {
+    margin: 2rem;
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+.declarationSec label h4 {
+    font-size: 1.125rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+.declarationSec input {
+    padding: 0;
+    height: initial;
+    width: initial;
+    margin-bottom: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.declarationSec label {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    gap: 1rem;
+}
+
+.declarationSec label:before {
+    content: "";
+    -webkit-appearance: none;
+    background-color: transparent;
+    border: 2px solid #535ee0;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05),
+        inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+    padding: 10px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-right: 5px;
+    height: 20px;
+}
+
+.declarationSec input:checked+label:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 2px;
+    left: 9px;
+    width: 6px;
+    height: 14px;
+    border: solid #675ef5;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.formfiled {
+    margin: 2rem 0;
+}
+
+.declarationSec ul {
+    margin-left: 4rem;
+}
+
+.declarationSec h2 {
+    font-size: 2rem;
+}
+
+.sequenceForm .ov_box {
+    border: 1px solid #d7d7d7;
+    border-radius: 6px;
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+    height: 26rem;
+    overflow-x: auto;
+}
+
+.sequenceForm .ov_box p {
+    margin-bottom: 1rem;
+}
+
+.sequenceForm .ov_box ul li {
+    margin-bottom: 10px;
+}
+
+.sequenceForm .ov_box h4 {
+    font-size: 1.5rem;
+}
+
+.boxStyle {
+    background: var(--white);
+    box-shadow: 0 0 20px #0002;
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.boxStyle:before {
+    content: none;
+}
+
+.boxStyle:hover .iti__flag-container {
+    position: absolute;
+}
+
+.logoSelection {
+    display: flex;
+    flex-direction: column;
+    background: #f5f5f5;
+    border-radius: 1.25rem;
+    position: relative;
+}
+
+.logoSelection .selectTmService {
+    background: #f5f5f5;
+    height: 4.375rem;
+    border-radius: 1.25rem;
+    padding: 1.35rem;
+    position: relative;
+}
+
+.logoSelection .selectTmService p {
+    color: var(--black);
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.logoSelection .selectTmService:after {
+    content: "\f107";
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 900;
+    position: absolute;
+    top: 35%;
+    right: 1rem;
+}
+
+.logoSelection .tmServices {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    box-shadow: 0 10px 10px #0001;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.logoSelection .selectionStyle {
+    position: relative;
+    flex: 0 0 49%;
+}
+
+.logoSelection .selectionStyle .form-check-input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    opacity: 0;
+    z-index: 1;
+}
+
+.selectionStyle .wrap {
+    padding: 0.3rem 3.125rem 0.3rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: ease all 0.5s;
+    background: #fff;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.logoSelection .selectionStyle .wrap:before,
+.logoSelection .selectionStyle .wrap:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+    width: 22px;
+    height: 22px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.logoSelection .selectionStyle .form-check-input:checked+.wrap:before {
+    border-color: var(--primary);
+    background: var(--primary);
+}
+
+.logoSelection .selectionStyle .wrap:after {
+    content: "\f00c";
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 900;
+    font-size: 14px;
+    width: auto;
+    height: auto;
+    border: none;
+    border-radius: unset;
+    top: 50%;
+    right: 1.25rem;
+    transform: translateY(-50%);
+    opacity: 0;
+}
+
+.logoSelection .selectionStyle .form-check-input:checked+.wrap:after {
+    opacity: 1;
+    color: var(--white);
+}
+
+.selectionStyle .wrap .img {
+    width: 60px;
+}
+
+.selectionStyle .wrap .img img {
+    height: auto;
+}
+
+.selectionStyle .wrap .content {
+    display: flex;
+    flex-direction: column;
+}
+
+.selectionStyle .wrap .form-check-label {
+    color: var(--black);
+    font-size: 1.25rem;
+    font-weight: 600 !important;
+}
+
+.selectionStyle .wrap small {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.logoStyle {
+    position: relative;
+}
+
+.logoStyle .form-control {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 0;
+}
+
+.logoStyle .fileUploadStyle {
+    padding: 2rem;
+    border-radius: 1rem;
+    background: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.startingPoint {
+    display: none;
+}
+
+.formHead {
+    display: flex;
+    justify-content: space-between;
+    background: #f3f3f3;
+    padding: 1rem 2rem;
+    border-radius: 10px 10px 0 0;
+    border: 1px solid #e1e1e1;
+    border-bottom: 0;
+    position: relative;
+    z-index: 0;
+}
+
+.formHead h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+}
+
+/* div#total_price {
+      padding-right: 2.85rem;
+  } */
+td.amount {
+    text-align: end;
+}
+
+/* .newForm form {padding: 2rem;background: #f5f5fd5e;border: 1px solid #e1e1e1;border-radius: 0 0 10px 10px;} */
+
+.newForm.sequenceForm .form-control {
+    margin: 1rem 0;
+}
+
+.btnStyle {
+    background-color: var(--primary);
+    border-radius: 7px;
+    border: 1px solid var(--primary);
+    color: var(--white);
+    font-size: 1rem;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    text-transform: capitalize;
+    transition: all 0.4s ease-in-out;
+    display: inline-block;
+}
+
+.btnStyle:hover {
+    color: var(--white);
+    box-shadow: 0 0 20px rgb(27 30 49 / 60%);
+}
+
+.newForm .btnStyle {
+    border-radius: 8px;
+    padding: 0.8rem 0;
+    font-size: 1.2rem;
+}
+
+.newForm form h6 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.3rem;
+    font-size: 1.5rem;
+    align-items: center;
+}
+
+.blink {
+    animation: blink1 2s cubic-bezier(0.4, 0, 1, 1) infinite;
+    font-weight: 600;
+}
+
+@keyframes blink1 {
+
+    0%,
+    100% {
+        color: #000000;
+    }
+
+    50% {
+        color: #a61304;
+    }
+}
+
+.topButton {
+    background: var(--yellow);
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    position: fixed;
+    bottom: 5rem;
+    right: 2rem;
+    color: var(--white);
+    font-size: 1.5rem;
+    opacity: 0;
+}
+
+.topButton.show {
+    opacity: 1;
+}
+
+.topButton:hover {
+    color: var(--primary);
+}
+
+.blogThumb img {
+    height: 250px;
+}
+
+h4 {
+    font-size: 1.75rem !important;
+    font-weight: 600 !important;
+    position: unset !important;
+    margin: 1rem 0 1rem !important;
+    -webkit-text-stroke: unset !important;
+    color: var(--primary) !important;
+}
+
+h4::after {
+    display: none;
+}
+
+.packageSec .dollr h2 {
+    font-size: 3rem;
+}
+
+.packageSec .dollr h6::before {
+    inset: 1.2rem 0 0 1.4rem;
+    width: 70%;
+}
+
+.packageSec .packgebody .listStyle {
+    height: 15rem;
+    overflow: overlay;
+}
+
+.packageSec .packgebody .listStyle li p {
+    text-align: start;
+}
+
+.packageSec .packgebody {
+    padding: 0 1rem 0rem;
+    min-height: 27rem;
+}
+
+.pricing-footer {
+    text-align: center;
+    margin: 1rem;
+    min-height: 6rem;
+}
+
+.packageSec .packgeBox {
+    margin: 2rem 0 0;
+}
+
+.stickyWrap td {
+    font-weight: 600;
+    font-size: 15px;
+    color: #fff;
+    box-shadow: none;
+    border: 0;
+}
+
+.boxStyle h4 {
+    margin: 0;
+    font-size: 2.75rem !important;
+    text-align: center;
+    font-weight: 800 !important;
+    transition: all 0.4s ease;
+}
+
+.boxStyle h6 {
+    text-align: center;
+    font-size: 1.85rem;
+    font-weight: 700;
+    color: #75a2e5;
+    transition: all 0.4s ease;
+    margin: 0;
+}
+
+/* END: Declaration Form CSS */
+
+.sequenceFormSec.packageSec .packgeBox {
+    margin: 0;
+}
+
+.sequenceFormSec.packageSec .packgeBox .mainHead:before {
+    content: none;
+}
+
+.sequenceFormSec.packageSec .packgeBox .mainHead {
+    background: var(--primary);
+    padding: 1.5rem 1.25rem;
+}
+
+.sequenceFormSec.packageSec .packgeBox .mainHead h3 {
+    margin: 0;
+    line-height: 1;
+    color: var(--white);
+    text-align: left;
+}
+
+.sequenceFormSec.packageSec .packgebody {
+    padding: 0 1.25rem;
+}
+
+.sequenceFormSec.packageSec .packgebody .dollr {
+    justify-content: flex-start;
+    /* margin: 0; */
+}
+
+.sequenceFormSec.packageSec .dollr h2 {
+    /* font-family: "Niagara Solid", sans-serif; */
+    font-size: 60px;
+    font-weight: 700;
+    color: var(--primary);
+    margin: 0;
+}
+
+.sequenceFormSec.packageSec .packgebody p {
+    text-align: left;
+}
+
+.sequenceFormSec.packageSec .packgebody .listpckges li::before {
+    content: "\f14a";
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 800;
+    color: var(--black);
+    font-size: 1.5rem;
+    position: relative;
+    top: -6px;
+}
+
+.sequenceFormSec.packageSec .listpckges li {
+    padding: 0;
+    font-weight: 500;
+    align-items: flex-start;
+    border-bottom: 0;
+}
+
+.sequenceFormSec.packageSec .packgeBox:hover .packgebody p {
+    color: var(--white) !important;
+}
+
+.sequenceFormSec.packageSec .packgeBox:hover .packgebody .listpckges li::before {
+    color: #75a2e5;
+}
+
+.brandRegistery {
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-bottom: 0.8rem;
+}
+
+.brandRegistery input {
+    margin: 0 10px 0 0;
+    width: 25px;
+    height: 25px;
+}
+
+.brandRegistery :is(span, del) {
+    color: red;
+}
+
+.brandRegistery strong {
+    font-weight: 800;
+}
+
+.sequenceForm.newForm .formHead {
+    background: var(--primary);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    padding: 0.6rem 2rem;
+}
+
+.sequenceForm.newForm .formHead :is(h6, h5) {
+    margin: 0;
+    color: var(--white);
+    font-size: 1.5rem;
+}
+
+.sequenceForm.newForm .formHead h5 {
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+@media only screen and (max-width: 1920px) {}
+
+@media only screen and (max-width: 1800px) {
+    .packageSec .dollr h2 {
+        font-size: 2.3rem;
+    }
+
+    .packageSec .dollr h6 {
+        font-size: 1.6rem;
+    }
+
+    .packageSec .dollr h6::before {
+        top: 0.7rem;
+        width: 60%;
+        left: 1.8rem;
+    }
+}
+
+@media only screen and (max-width: 1600px) {}
+
+@media only screen and (max-width: 1440px) {
+    .packageSec .discount {
+        left: 8rem;
+    }
+
+    .packageSec .dollr {
+        flex-direction: column;
+    }
+
+    .selectPkgWrap {
+        min-height: 22rem;
+    }
+
+    .selectPkgWrap.new-box {
+        min-height: 16rem;
+    }
+
+    /* .sequenceFormSec.packageSec .dollr h2 {
+      font-size: 60px;
+    } */
+    .selectPkgWrap label {
+        font-size: 1.3rem;
+    }
+
+    .sequenceFormSec.packageSec .packgeBox .mainHead h3 {
+        font-size: 1.125rem;
+    }
+
+    .stepStatus ul {
+        gap: 22px;
+        padding-bottom: 0;
+    }
+
+    .stepStatus ul li:after {
+        background: rgb(223 223 223 / 50%);
+        transform: scale(1.85);
+    }
+
+    .stepStatus ul li:after,
+    .stepStatus ul li:before {
+        right: -16px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .packageSec .discount h6 {
+        font-size: 12px;
+    }
+
+    .packageSec .discount {
+        margin-top: -2rem;
+        left: 7rem;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    html {
+        font-size: 13px;
+    }
+
+    .packageSec .discount {
+        left: 8rem;
+    }
+
+    .sequenceFormSec {
+        height: 100%;
+    }
+
+    .boxStyle h4 {
+        line-height: 1;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .declarationSec h2 {
+        font-size: 1.5rem;
+    }
+
+    .formBanner ul {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.3rem;
+        padding: 0;
+        margin-top: 0;
+    }
+
+    .formBanner ul li span {
+        display: none;
+    }
+
+    .formBanner h2 {
+        font-size: 30px;
+    }
+
+    .formBanner ul li a {
+        font-size: 0.8rem;
+    }
+
+    .declarationSec label h4 {
+        font-size: 1rem;
+    }
+
+    .logoSelection .selectionStyle {
+        flex: 0 0 100%;
+    }
+
+    /* .sequenceFormSec.packageSec .dollr h2 {
+      font-size: 6rem;
+    } */
+    .sequenceFormSec.packageSec .packgebody .listpckges li::before {
+        font-size: 18px;
+        top: -1px;
+    }
+
+    .stepStatus ul li:after,
+    .stepStatus ul li:before {
+        content: none;
+    }
+
+    .stepStatus ul li {
+        flex: 0 0 100%;
+        border-bottom: 0;
+    }
+
+    .stepStatus ul li span {
+        font-size: 2rem;
+    }
+
+    .stepStatus ul li span br {
+        display: none;
+    }
+
+    .stepStatus ul li span b {
+        font-size: 1.5rem;
+        color: var(--black);
+    }
+
+    .stepStatus ul.bars {
+        display: flex;
+        gap: 4px;
+        padding: 0;
+    }
+
+    .stepStatus ul.bars li {
+        flex: 0 0 calc(16% - 4px);
+        height: 4px;
+        background: #cdcdcd;
+    }
+
+    .stepStatus ul.bars li.active {
+        background: #75a2e5;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .declarationSec label h4 {
+        font-size: 1rem;
+    }
+
+    .formBanner {
+        height: 270px;
+        background: #000 !important;
+        padding-top: 6rem !important;
+    }
+
+    .declarationSec h2 {
+        font-size: 1.2rem;
+    }
+
+    .declarationSec {
+        padding: 1rem 0;
+    }
+
+    .formfiled {
+        margin: 1rem 0;
+    }
+
+    .declarationSec ul {
+        margin-left: 1rem;
+        padding: 0;
+    }
+
+    .declarationSec ul li {
+        padding: 7px 0;
+    }
+
+    .declarationSec h4 {
+        margin: 0rem;
+        font-size: 1rem;
+    }
+
+    .formText,
+    .form-Contnt {
+        padding: 2rem 1rem;
+    }
+
+    .formBanner h2 {
+        font-size: 25px;
+    }
+
+    .newForm form h6 {
+        font-size: 1.2rem;
+        flex-direction: column;
+        text-align: center;
+        gap: 0.8rem;
+    }
+
+    .blogThumb img {
+        height: auto;
+    }
+
+    .formHead h4 {
+        font-size: 1.3rem;
+    }
+
+    .formHead {
+        padding: 1rem;
+    }
+
+    .bg-light {
+        margin-bottom: 1rem;
+    }
+
+    /* .stickyWrap {
+      padding: 1rem 1rem 0;
+    } */
+    .stickyWrap h4 {
+        font-size: 1.2rem;
+    }
+
+    .stickyWrap h5 {
+        font-size: 1.1rem;
+    }
+
+    .newForm form {
+        padding: 1rem;
+    }
+
+    .sequenceFormSec .packageStyle .head h4 {
+        margin: -1.75rem 0 0;
+    }
+
+ 
+    .selectPkgWrap {
+        height: auto;
+        min-height: auto;
+    }
+
+    .stepContnt {
+        text-align: left;
+        padding: 0;
+    }
+
+    .step5Form {
+        border-right: 0;
+    }
+
+    .stepStatus {
+        border-radius: 0.5rem;
+        padding: 1rem 0 0 0;
+    }
+
+    .stepStatus h2 {
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+
+    .progress {
+        height: 20px;
+        width: 100%;
+    }
+
+    .packageSec .discount {
+        margin-top: -3rem;
+        left: 20rem;
+    }
+
+    .packageSec .packgeBox:hover {
+        transform: none;
+    }
+
+    .sequenceFormSec {
+        padding: 0rem 0 2rem;
+    }
+
+    .formWrap .form-control {
+        margin: 6px 0;
+    }
+
+    .phoneNumber .iti__selected-flag {
+        height: calc(100% - 12px);
+        margin-top: 6px;
+    }
+
+    .formWrap .btnStyle {
+        height: 4.25rem;
+    }
+
+    .formWrap label[style="text-align:center;color:red;"] {
+        margin: 0;
+    }
+
+    .formWrap label:empty {
+        display: none;
+    }
+
+    .selectPkgWrap label {
+        font-size: 1.5rem;
+        min-height: auto;
+    }
+
+    .sequenceFormSec.packageSec .packgeBox {
+        margin: 0 0 1rem;
+    }
+
+    .phoneNumber input:not(.iti__search-input) {
+        padding-left: 7rem;
+    }
+
+    .stepStatus ul li span b {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .packageSec .discount {
+        margin-top: -3rem;
+        left: 13rem;
+    }
+}
+
+.organization-table td {
+    font-size: clamp(16px, 4vw, 18px);
+}
+
+.organization-table th,
+.organization-table td {
+    padding: 10px;
+}
+
+.organization-table th {
+    font-size: clamp(18px, 4vw, 20px);
+    padding-top: 1.5rem;
+}
+
+.organization-table table thead tr th:first-child,
+.organization-table table tbody tr td:first-child {
+    padding-left: clamp(1rem, 3vw, 2.5rem);
+}
+
+.organization-table table thead tr th:last-child,
+.organization-table table tbody tr td:last-child {
+    padding-right: clamp(1rem, 3vw, 2.5rem);
+}
+
+.organization-table table thead tr th:last-child,
+.organization-table table tbody tr td:last-child {
+    text-align: end;
+}
+
+.organization-table table tbody tr td {
+    padding-block: 1rem;
+}
+
+.iti__selected-flag {
+    border-radius: 1.25rem 0 0 1.25rem;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #818181;
+}
+
+.cutoff-price {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+
+.cutoff-price del {
+    position: relative;
+    color: #75a2e5;
+    font-size: clamp(70px, 10vw, 80px);
+}
+
+/* .cutoff-price del::before {
+    content: "";
+    position: absolute;
+    inset: 1.2rem 0 0 0;
+    background: black;
+    height: 2px;
+    transform: rotate(348deg) translateY(-50%);
+    top: 50%;
+  } */
+.cutoff-price span {
+    font-size: 22px;
+    color: #000;
+}
+
+.cutoff-price div {
+    display: flex;
+    flex-direction: column;
+}
+
+.sequence-cuttoff-price2 {
+    display: flex;
+    align-items: center;
+}
+
+.sequence-cuttoff-price h6::before {
+    width: 80% !important;
+    inset: 16px !important;
+}
+
+.sequence-cuttoff-price2 h6 {
+    font-size: 2.125rem;
+    color: #75a2e5;
+    text-align: center;
+    font-weight: 500;
+    position: relative;
+}
+
+.sequence-cuttoff-price2 h6::before {
+    content: "";
+    position: absolute;
+    inset: 1.2rem 0 0 0;
+    background: black;
+    height: 2px;
+    transform: rotate(348deg);
+}
+
+.sequence-cuttoff-price2 span {
+    display: block;
+    font-size: 1rem;
+    color: var(--primary);
+}
+
+.sequence-header {
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 1;
+}
+
+.sequence-header .sticky {
+    position: relative !important;
+}
+
+.iti {
+    width: 100%;
+}
+
+.lpForm .form-error {
+    border: 2px solid red;
+}
+
+.lpForm .form-error::placeholder {
+    color: red;
+}
